@@ -25,8 +25,9 @@
 </script>
 
 <!-- Bootstrap 4 -->
+<script src="{{asset('dashboard/assets')}}/plugins/jquery/jquery.min.js"></script>
 <!-- Script for LTR -->
-<!-- <script src="{{asset('dashboard/assets')}}/plugins/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+ {{-- <script src="{{asset('dashboard/assets')}}/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>  --}}
 <!-- Script for RTL -->
 <script src="{{asset('dashboard/assets')}}/dist/js-rtl/bootstrap-rtl.bundle.min.js"></script>
 
@@ -53,5 +54,7 @@
 <script src="{{asset('dashboard/assets')}}/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{asset('dashboard/assets')}}/dist/js/pages/dashboard.js"></script>
+
 </body>
 </html>
+
