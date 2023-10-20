@@ -24,7 +24,7 @@ class CategoryRequest extends FormRequest
 
 
         $rules = [
-            'name'=>'required|min:3|max:100|unique:categories,name,'.$this->id ,
+            'name'=>'required|min:3|max:100|unique:categories,id,'.$this->id,
             'description' => 'required|min:10 |max:600'
         ];
 

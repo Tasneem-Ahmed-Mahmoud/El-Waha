@@ -37,7 +37,7 @@
                with font-awesome or any other icon font library -->
                {{-- categories --}}
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link {{ Route::is('categories.create')||Route::is('categories.index')|| Route::is('categories.edit')?'active':'' }}">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 الاصناف
@@ -46,13 +46,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ route('categories.create') }}" class="nav-link active">
+                <a href="{{ route('categories.create') }}" class="nav-link {{  Route::is('categories.create')?'active':''  }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>اضافة صنف</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ route('categories.index') }}" class="nav-link">
+                <a href="{{ route('categories.index') }}" class="nav-link {{  Route::is('categories.index')?'active':''  }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>الاصناف</p>
                 </a>
@@ -66,7 +66,33 @@
           
          
            
-        
+          {{-- products --}}
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link {{ Route::is('products.create')||Route::is('products.index')||Route::is('products.edit')?'active':'' }}">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                المنتجات
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('products.create') }}" class="nav-link {{ Route::is('products.create')?'active':'' }}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>اضافة منتج</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('products.index') }}" class="nav-link {{ Route::is('products.index')?'active':'' }}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>المنتجات</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+         
+          
+         
          
          
         </ul>

@@ -9,4 +9,7 @@ class Category extends Model
 {
     use HasFactory;
     protected $fillable=['name','description','image'];
+    const PATH="images/categories/";
+    
+
 }
